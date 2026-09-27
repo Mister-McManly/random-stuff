@@ -40,8 +40,6 @@ else:
         print("JUST KIDDING! HHHAHAHHAHAHHAHHHHAAAAAAA")
     else:
         print("Correct! (Even though you didn't type YES)")
-    input("Are you homosexual? ")
-    print("I'm sure thats true... ")
     answer = input("Can you speak demon (e.g. I̸̤̊͗̏̋̚'̸͓̦͇̝͇̯͇͌̀͐m̸̱̹͔̓́͜͠ ̴̠̘̔̎c̴̟̈́̑͋͝ǒ̸̧̨̮̯̞̰͑̊̾m̴̡̏̓͐̉̉̎̕i̸̢̡̬͓̣͑̉͘͘n̸̦͓̜̖͙̠̮̂g̶̨͉͔̒̓̂̄͝ ̷̺̙͔̹̼͍͒̒̀͊̄̉ͅf̸̘̿͂͐̔͗͆õ̸̡̟̺̳̙̦̿͛̿̍̍́r̸̳̈̒͑ ̴̲̠͍̩̒́̃͒y̷̨̠͎̩͖̤̓͐̚͜͝o̶͚̓̄̑̂̈͝.̸͇̂̀̔͒͐͠) ")
     if answer == "yes":
         sanity += 2
