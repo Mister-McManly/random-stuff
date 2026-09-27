@@ -31,6 +31,15 @@ if random.random() < 0.30:
          print("YOU... survived by instead flying the plane seat out not the plane just the plane seat... it somehow worked though. But the job died")
 else:
     print("Hmmmmmmm")
+    print("Please type 'YES' to continue.")
+    ans = input("> ")
+    if ans == "YES":
+        print("ERROR: You were supposed to type 'NO'. Restarting...")
+        sanity -= 10
+        time.sleep(5)
+        print("JUST KIDDING! HHHAHAHHAHAHHAHHHHAAAAAAA")
+    else:
+        print("Correct! (Even though you didn't type YES)")
     input("Are you homosexual? ")
     print("I'm sure thats true... ")
     answer = input("Can you speak demon (e.g. I̸̤̊͗̏̋̚'̸͓̦͇̝͇̯͇͌̀͐m̸̱̹͔̓́͜͠ ̴̠̘̔̎c̴̟̈́̑͋͝ǒ̸̧̨̮̯̞̰͑̊̾m̴̡̏̓͐̉̉̎̕i̸̢̡̬͓̣͑̉͘͘n̸̦͓̜̖͙̠̮̂g̶̨͉͔̒̓̂̄͝ ̷̺̙͔̹̼͍͒̒̀͊̄̉ͅf̸̘̿͂͐̔͗͆õ̸̡̟̺̳̙̦̿͛̿̍̍́r̸̳̈̒͑ ̴̲̠͍̩̒́̃͒y̷̨̠͎̩͖̤̓͐̚͜͝o̶͚̓̄̑̂̈͝.̸͇̂̀̔͒͐͠) ")
@@ -57,6 +66,23 @@ else:
         sanity += 2
     input("Would you die for this job? ")
     print("Ok. ")
+    print("--- SECURITY CHECK ---")
+    print("Please type the phrase exactly as shown to continue.")
+    print("Phrase: [ Apple Pie ]")
+
+    attempts = 0
+
+    while True:
+        user_input = input("Your answer: ")
+        attempts += 1
+        if attempts == 4:
+            print("Verification successful. Proceeding to survey...")
+            break
+       
+        print("Error: Input does not match font, spacing, or spiritual vibe.")
+        print("Please try again.\n")
+        time.sleep(3)  
+
     input("Are you as smart as the average person? ")
     print("Hmm I'm not so sure. ")
     if random.random() < 0.50:
@@ -102,14 +128,14 @@ else:
             listener = threading.Thread(target=listen_for_enter, daemon=True)
             listener.start()
 
-            while time.time() - start < 15:
+            while time.time() - start < 5:
                 time.sleep(0.05)
 
             stop_listening.set()
 
-            while time.time() - start < 30:
+            for i in range(0, 30):
                 print("...")
-                time.sleep(1) 
+                time.sleep(1)
 
             if random.random() < 0.50:
                 if gender == "APACHE HELICOPTEr":
@@ -137,6 +163,24 @@ else:
     else:
         input("Have you ever swallowed demons whole? ")
         print("Alright ")
+        #Hey who put me here?
+        if random.random() < 0.001:
+            print("SERVER SIDE TEXT: [Hmmm. Strange...]")
+            time.sleep(3)
+            print("SERVER SIDE TEXT: [I seem to have accidentaly taken you to this strange place i think its called-]")
+            time.sleep(10)
+            print("Well...")
+            time.sleep(1)
+            print("There's a man behind this tree...")
+            time.sleep(3)
+            egg = input("He... wants to know if you want an egg...")
+            if egg == ("yes"):
+                print("[You got the egg]")
+            else:
+                print("Hmmm too bad")
+
+
+
         eatsy = input("If I was to give you all 12 elephants that are in my fridge do you think you could eat them all? ")
         if eatsy == "yes":
             sanity += 1
@@ -171,7 +215,7 @@ time.sleep(5)
 if sanity <= 0:
     print("You are a perfectly normal person... THATS BAD!!!")
 elif 0 < sanity <= 5:
-     print("Hmmmm only slightly? your an amatuer.")
+     print("Hmmmm only slightly? You're an amatuer.")
 elif 5 < sanity <= 15:
     print("Ok you're pretty good")
 elif 15 < sanity <= 30:
